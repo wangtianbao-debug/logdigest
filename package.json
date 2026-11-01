@@ -1,0 +1,18 @@
+{
+  "name": "logdigest",
+  "version": "0.1.0",
+  "description": "Turn a web-server access log into one self-contained HTML report.",
+  "type": "module",
+  "bin": { "logdigest": "bin/logdigest.js" },
+  "exports": "./src/index.js",
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node tools/make-demo.mjs && node bin/logdigest.js demo.log -o demo.html --title \"shop.example.com\""
+  },
+  "keywords": ["access-log", "nginx", "apache", "analytics", "report", "html", "cli", "zero-dependencies", "log-analysis"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/wangtianbao-debug/logdigest.git" },
+  "homepage": "https://github.com/wangtianbao-debug/logdigest#readme"
+}

@@ -1,0 +1,10 @@
+node_modules/
+*.log
+*.log.gz
+demo.html
+report.html
+shot*.png
+shot-*.png
+crop.png
+.DS_Store
+Thumbs.db
